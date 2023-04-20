@@ -9,7 +9,7 @@ const Login = () =>{
         return(
             <div>
                 <Feed></Feed>
-                <button onClick={()=>signOut()}><img src={session.user.image} className="absolute -right-1/4 top-12 mr-16 w-10 h-10 border rounded-full border-black"></img></button>
+                <button onClick={()=>signOut()}><img src={session.user.image} style={{left:"1220px"}} className="absolute -right-1/4 top-12 mr-16 w-10 h-10 border rounded-full border-black"></img></button>
             </div>    
         )
     }else{
