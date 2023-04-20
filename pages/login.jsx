@@ -15,10 +15,10 @@ const Login = () =>{
     }else{
         return(
             <div className="flex h-screen w-screen">
-                <div className=" bg-black h-full w-2/6 text-center">
-                    <h1 style={{fontSize:"72px", fontFamily:"Montserrat, sans-serif"}} className="relative font-semibold text-white align-middle top-1/3 pt-16">Board.</h1>
+                <div className="lg: bg-black h-full w-2/6 text-center">
+                    <h1 style={{fontFamily:"Montserrat, sans-serif"}} className="md:font-semibold pt-60 text-5xl text-white align-middle lg:text-6xl lg:top-10 xl:text-7xl">Board.</h1>
                 </div> 
-                <div className="h-full w-4/6 pl-60 pt-64">
+                <div className="md:h-full w-4/6 pl-24 pt-36 lg:w-4/6 lg:pl-80 lg:pt-40">
                     <h1 className="text-3xl font-bold">Sign In</h1>
                     <h1 className="text-sm font-normal mt-1">Sign in to your account</h1>
                 
