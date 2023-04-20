@@ -1,4 +1,5 @@
 import Chart from 'react-google-charts';
+import { signOut } from 'next-auth/react';
 
 export default function Dashboard(props){
     
