@@ -1,16 +1,16 @@
 import Dashboard from "./dashboard"
 
-export default function Feed() {
+export default function Feed(props) {
     return (
       <div className="absolute h-full w-full mx-5 pb-10">
       
       <div className="flex h-full w-full">
         
-        <div id="sidebar" className="xl:bg-black w-72 pl-10 pt-10 h-full text-white border-none rounded-3xl m-5 md:hidden lg:block pl-10 w-72" >
+        <div id="sidebar" className="lg:bg-black w-72 pl-10 pt-8 h-full text-white border-none rounded-3xl m-5 md:hidden lg:block lg:pl-10 lg:w-72 md:hidden" >
           
-          <h1 style={{ fontFamily:"Montserrat, sans-serif"}} className="xl:block pl-1 pt-2 font-semibold xl:text-3xl lg:hidden text-2xl md:hidden">Board.</h1>
+          <h1 style={{ fontFamily:"Montserrat, sans-serif"}} className="xl:block pl-1 pt-2 font-semibold xl:text-3xl text-2xl ">Board.</h1>
   
-          <ul className="xl:block top-24 pt-16 pl-3 ml-2 mt-0 ml-0 top-16 md:hidden">
+          <ul className="lg:block top-24 pt-16 pl-3 ml-2 mt-0 ml-0 top-16 lg:block md:hidden">
             <li className="lg:flex my-5 mt-4 text-lg xl:text-xl md:text-md">
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="lg:mr-5 mt-1 md:mr-1">
                 <path d="M9.8995 0C9.66079 0 9.43186 0.0948265 9.26307 0.263619C9.09428 0.432411 8.99945 0.661343 8.99945 0.900051V8.10046C8.99945 8.33917 9.09428 8.5681 9.26307 8.73689C9.43186 8.90568 9.66079 9.00051 9.8995 9.00051H17.0999C17.3386 9.00051 17.5675 8.90568 17.7363 8.73689C17.9051 8.5681 18 8.33917 18 8.10046C18 5.95208 17.1465 3.8917 15.6274 2.37257C14.1083 0.853439 12.0479 0 9.8995 0V0ZM10.7996 7.20041V1.86311C12.1462 2.05717 13.3939 2.68195 14.3559 3.64402C15.318 4.60609 15.9428 5.85375 16.1369 7.20041H10.7996Z" fill="white"/>
@@ -56,7 +56,7 @@ export default function Feed() {
           
         </div>
   
-        <Dashboard className="w-2/6"></Dashboard>
+        <Dashboard srim={props.srim} className="w-2/6"></Dashboard>
       
       </div>
       </div>
